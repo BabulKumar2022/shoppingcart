@@ -1,9 +1,9 @@
 import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react'
 import { CartContext } from '../../components/context/Context';
-
 import './Shop.css';
 //https://fakestoreapi.com/products
+
 export const Shop = () => {
 
 const [data, setData]= useState([]);
@@ -26,11 +26,11 @@ console.log(Globalstate)
         data.map((item, index) =>{
           item.quantity = 1;
           return(
-            <div className='card' key={index}>
+            <div className='cards' key={index}>
               <img src={item.image} alt=""/>
               <p>{item.title}</p>
               <h3>$: {item.price}</h3>
-             <span><button onClick={() => dispatch({type: 'ADD', payload: item})}>add to cart</button></span> 
+             <span><button className='btn' onClick={() => dispatch({type: 'ADD', payload: item})}>add to cart</button></span> 
             </div>
           )
         })

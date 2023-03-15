@@ -3,7 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Navbar.css"
 
-export const Navbar = () => {
+export const Navbar = ({props}) => {
+
   return (
     <div className='navbar'>
         <div className='links'>

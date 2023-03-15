@@ -49,23 +49,42 @@
 
 } */ */
 /* --------------------------- */
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .home {
     width: 100%;
     height: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    place-items: center;
 
 
    
     
   }
-  .card{
+  .cards{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 350px;
+    height: 350px;
+    margin: 15px 0px;
+    box-shadow: 0 10px 10px 10px rgb(0, 0, 0, 0.1);
+    padding: 15px;
+    place-items: center;
   }
   img {
     width: 200px;
     max-height: 200px;
+  }
+  .btn{
+    padding: 10px;
+    background-color: blue;
+    color: aliceblue;
+    cursor: pointer;
+    margin-bottom: 0px;
   }
   /* ------------------------------ */
