@@ -1,20 +1,19 @@
 .cart{
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px 30px;
 }
 .cart .card{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 30px;
+    margin: 10px;
 }
 .cart .card img{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 .cart .card p{
 width: 200px;
@@ -35,4 +34,9 @@ width: 200px;
     text-align: right;
     border-top: 1px solid black;
     margin-right: 50px;
+}
+.delete{
+    background-color: red;
+    width: 50px;
+
 }

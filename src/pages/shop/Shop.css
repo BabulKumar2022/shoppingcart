@@ -51,10 +51,11 @@
 /* --------------------------- */
 
 .home {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 200px;
-    gap: 150px
+    width: 100%;
+    height: auto;
+    display: flex;
+
+
    
     
   }

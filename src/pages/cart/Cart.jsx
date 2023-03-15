@@ -14,9 +14,9 @@ export const Cart = () => {
       {state.map((item, index) =>{
         return(
           <div className='card' key={index}>
-            <img src={item.productImage} alt=""/>
-            <p>{item.productName}</p>
-            <p>{item.quantity * item.price}</p>
+            <img src={item.image} alt=""/>
+            <p>Name: {item.title}</p>
+            <p>Sub Total: {item.quantity * item.price}</p>
             <div className='quantity'>
               <button onClick={() => dispatch({type: "INCREASE", payload: item})}>+</button>
               <p>{item.quantity}</p>
@@ -30,7 +30,7 @@ export const Cart = () => {
               }
                  }>-</button>
             </div>
-            <button onClick={() => dispatch({type: "REMOVE", payload: item})}>X</button>
+            <button className='delete' onClick={() => dispatch({type: "REMOVE", payload: item})}>X</button>
           </div>
         )
       })}
